@@ -1,0 +1,26 @@
+{
+  "name": "stripe",
+  "version": "1.0.0",
+  "description": "api endpoints for OneAPI :: Stripe \"",
+  "main": "main.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --compilers js:babel-core/register"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-json-schema": "^1.5.0",
+    "mocha": "^5.0.4",
+    "serverless-offline": "^3.18.0"
+  },
+  "dependencies": {
+    "stripe": "^5.5.0"
+  }
+}

@@ -1,0 +1,33 @@
+service: stripe
+provider:
+  runtime: nodejs6.10
+  name: aws
+  region: ap-south-1
+  timeout: 60
+  stage: ${opt:stage}
+  apiGatewayRestApiId:
+    Ref: 130qc828ce
+  environment:
+    STRIPE_KEY: ${file(./config/${self:provider.stage}.yml):STRIPE_KEY}
+
+
+custom: 
+  serverless-offline:
+    port: 3333
+    host: 0.0.0.0
+    babelOptions:
+      presets: ["es2015", "latest"]
+  optimize:
+    minify: true
+
+plugins:
+  - serverless-offline
+
+functions :
+  credit_sale :
+    handler : stripe/transactions.creditSale
+    events :
+      - http:
+          method: post
+          path: credit
+          cors: true

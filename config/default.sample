@@ -1,0 +1,5 @@
+serverless_region: "ap-south-1"
+serverless_service_name: "stripe"
+STAGE: "default"
+HOME_URL: 'http://localhost:3333/'
+STRIPE_KEY : 'XXXX'  //Your Stripe Key Go's Here 
