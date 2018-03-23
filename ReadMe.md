@@ -6,7 +6,7 @@
 ### SETUP INSTRUCTIONS
 - `npm install`
 - in `stripe\config` make a new file `default.yml` and set it up with your credentials use `default.sample` for reference
-- `serverless offline`
+- `serverless offline --stage default`
 - `open POSTMAN and make a POST request on `http://localhost:3333/credit` with the sample JSON i.e 
 ```
 {
