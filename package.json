@@ -1,7 +1,7 @@
 {
   "name": "stripe",
   "version": "1.0.0",
-  "description": "api endpoints for OneAPI :: Stripe \"",
+  "description": "Creating Payments With STRIPE using serverless and Lambda Functions and test with Mocha and Chai",
   "main": "main.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec --compilers js:babel-core/register"
