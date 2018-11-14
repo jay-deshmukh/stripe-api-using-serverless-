@@ -27,4 +27,4 @@ tests["Valid Data "] = tv4.validate(data1, schema);
 
 ```
 
-- you can also do `mocha and chai ` based testing in a console with `npm test`
+- run  `mocha and chai ` tests in a console with `npm test`
